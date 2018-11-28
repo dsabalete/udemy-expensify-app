@@ -3,4 +3,4 @@ node_modules
 package-lock.json
 yarn.lock
 public/bundle.js
-src/tests/components/__snapshots__/*.snap
+src/tests/components/__snapshots__/*.test.js.snap
