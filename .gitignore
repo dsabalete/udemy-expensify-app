@@ -1,4 +1,3 @@
 .vscode
-node_modules
-public/dist/bundle.*
-public/dist/styles.*
+node_modules/
+public/dist/
