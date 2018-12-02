@@ -1,4 +1,4 @@
 .vscode
 node_modules
-public/bundle.*
-public/styles.*
+public/dist/bundle.*
+public/dist/styles.*
