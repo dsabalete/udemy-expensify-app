@@ -1,7 +1,4 @@
 .vscode
 node_modules
-package-lock.json
-src/tests/components/__snapshots__/*.test.js.snap
-yarn.lock
 public/bundle.*
 public/styles.*
