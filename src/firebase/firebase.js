@@ -11,6 +11,16 @@ var config = {
 
 firebase.initializeApp(config);
 
-firebase.database().ref().set({
-    name: 'David Sabalete'
+const database = firebase.database();
+
+database.ref().set({
+    name: 'David Sabalete',
+    age: 45,
+    isSingle: false,
+    location: {
+        city: 'Ripollet',
+        country: 'Spain'
+    }
 });
+
+database.ref().set('This is my data');
