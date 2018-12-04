@@ -27,16 +27,13 @@ database.ref().set({
     console.log('This failed.', error);
 });
 
-//database.ref().set('This is my data');
+// database.ref()
+//     .remove()
+//     .then(() => {
+//         console.log('Data was removed.');
+//     }).catch((e) => {
+//         console.log('Did not remove data', e);
+//     });
 
-// database.ref('age').set(46);
-// database.ref('location/city').set('Sabadell');
-
-database.ref('attributes').set({
-    height: 178,
-    weight: 93.5
-}).then(() => {
-    console.log('Attributes are set');
-}).catch((e) => {
-    console.log('Attributes failed.', e);
-});
+// another way to remove data
+// database.ref('isSingle').set(null);
