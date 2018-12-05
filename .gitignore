@@ -1,7 +1,6 @@
 .vscode
 node_modules/
 public/dist/
-yarn.lock
 package-lock.json
 .env.test
 .env.development
