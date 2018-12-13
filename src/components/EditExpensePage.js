@@ -1,8 +1,8 @@
 import React from 'react';
 import { connect } from 'react-redux';
 import ExpenseForm from './ExpenseForm';
+import OptionModal from './OptionModal';
 import { startEditExpense, startRemoveExpense } from '../actions/expenses';
-import Modal from 'react-modal';
 
 export class EditExpensePage extends React.Component {
     state = {
@@ -20,8 +20,8 @@ export class EditExpensePage extends React.Component {
     };
     handleRemove = () => {
         this.handleCloseModal();
-        // this.props.startRemoveExpense({ id: this.props.expense.id });
-        // this.props.history.push('/');
+        this.props.startRemoveExpense({ id: this.props.expense.id });
+        this.props.history.push('/');
     };
     handleCancelRemove = () => {
         this.handleCloseModal();
@@ -43,18 +43,13 @@ export class EditExpensePage extends React.Component {
                         className="button button--secondary"
                         onClick={this.onRemove}>Remove Expense</button>
                 </div>
-                <Modal
+                <OptionModal
                     isOpen={this.state.modalIsOpen}
                     onRequestClose={this.handleCloseModal}
-                    ariaHideApp={false}
-                >
-                    <button onClick={this.handleCloseModal}>Close</button>
-                    <div>
-                        <p>Are you sure you want to remove it?</p>
-                        <button onClick={this.handleRemove}>Yes</button>
-                        <button onClick={this.handleCancelRemove}>No</button>
-                    </div>
-                </Modal>
+                    handleCloseModal={this.handleCloseModal}
+                    handleRemove={this.handleRemove}
+                    handleCancelRemove={this.handleCancelRemove}
+                />
             </div>
         );
     }
