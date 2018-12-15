@@ -10,6 +10,24 @@
     text-decoration: none;
 }
 
+.google--icon {
+    background: url('/images/google-logo.png') transparent 5px 50% no-repeat;
+    background-size: 32px;
+    display: inline-block;
+    vertical-align: middle;
+    width: 42px;
+    height: 42px;
+}
+
+.github--icon {
+    background: url('/images/github-logo.png') transparent 5px 50% no-repeat;
+    background-size: 32px;
+    display: inline-block;
+    vertical-align: middle;
+    width: 42px;
+    height: 42px;
+}
+
 .button--link {
     background: none;
     border: none;

@@ -17,8 +17,21 @@ exports[`should render LoginPage correctly 1`] = `
     </p>
     <button
       className="button"
+      id="buttonGoogle"
     >
-      Login with Google
+      Login with 
+      <span
+        className="google--icon"
+      />
+    </button>
+    <button
+      className="button"
+      id="buttonGithub"
+    >
+      Login with 
+      <span
+        className="github--icon"
+      />
     </button>
   </div>
 </div>
