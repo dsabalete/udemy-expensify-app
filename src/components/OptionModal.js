@@ -1,7 +1,7 @@
 import React from 'react';
 import Modal from 'react-modal';
 
-const OptionModal = (props) => (
+export const OptionModal = (props) => (
     <Modal
         isOpen={props.isOpen}
         onRequestClose={props.onRequestClose}
