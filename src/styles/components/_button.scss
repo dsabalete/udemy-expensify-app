@@ -6,7 +6,7 @@
     font-size: $font-size-large;
     font-weight: 300;
     line-height: 1;
-    padding: $s-size;
+    padding: $s-size $l-size;
     text-decoration: none;
 }
 
@@ -30,6 +30,15 @@
 
 .facebook--icon {
     background: url('/images/facebook-logo.png') transparent 5px 50% no-repeat;
+    background-size: 32px;
+    display: inline-block;
+    vertical-align: middle;
+    width: 42px;
+    height: 42px;
+}
+
+.twitter--icon {
+    background: url('/images/twitter-logo.png') transparent 5px 50% no-repeat;
     background-size: 32px;
     display: inline-block;
     vertical-align: middle;

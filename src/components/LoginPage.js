@@ -3,13 +3,15 @@ import { connect } from 'react-redux';
 import {
     startLoginGoogle,
     startLoginGithub,
-    startLoginFacebook
+    startLoginFacebook,
+    startLoginTwitter
 } from '../actions/auth';
 
 export const LoginPage = ({
     startLoginGoogle,
     startLoginGithub,
-    startLoginFacebook
+    startLoginFacebook,
+    startLoginTwitter
 }) => (
         <div className="box-layout">
             <div className="box-layout__box">
@@ -33,6 +35,12 @@ export const LoginPage = ({
                     onClick={startLoginFacebook}>
                     Login with <span className="facebook--icon"></span>
                 </button>
+                <button
+                    id="buttonTwitter"
+                    className="button"
+                    onClick={startLoginTwitter}>
+                    Login with <span className="twitter--icon"></span>
+                </button>
             </div>
         </div>
     );
@@ -41,6 +49,7 @@ const mapDispatchToProps = (dispatch) => ({
     startLoginGoogle: () => dispatch(startLoginGoogle()),
     startLoginGithub: () => dispatch(startLoginGithub()),
     startLoginFacebook: () => dispatch(startLoginFacebook()),
+    startLoginTwitter: () => dispatch(startLoginTwitter()),
 });
 
 export default connect(undefined, mapDispatchToProps)(LoginPage);
